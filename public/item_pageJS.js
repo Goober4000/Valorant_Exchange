@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('https://valorant-api.com/v1/weapons/skins')
         .then(response => response.json())
         .then(data => {
+            console.log(data)
             const skins = data.data.map(skin => [skin.displayName, skin.displayIcon]);
 
             new gridjs.Grid({
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('https://valorant-api.com/v1/buddies')
         .then(response => response.json())
         .then(data => {
+            console.log(data)
             const buddies = data.data.map(buddies => [buddies.displayName, buddies.displayIcon]);
 
             new gridjs.Grid({
