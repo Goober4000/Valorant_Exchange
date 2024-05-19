@@ -86,11 +86,12 @@ footer {
 }
 
 .info_container {
-    width: 100%;
+    width: 80%;
     background-color: rgb(83, 82, 82);
     color: rgb(192, 189, 163);
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: 125px;
     padding: 10px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-radius: 8px;

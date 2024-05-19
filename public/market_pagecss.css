@@ -1,22 +1,22 @@
-table {
+#customersTable {
     width: 80%; 
     margin: 20px auto; 
     border-collapse: collapse; 
 }
 
-th, td {
-    border: 1px solid #ccc; 
+#customersTable th, td {
+    border: 1px solid #b8b5b5; 
     padding: 8px; 
     text-align: left;
-    color: #333; 
+    color: #e6e5e5; 
 }
 
-th {
-    background-color: #555;
-    color: white; 
+#customersTable th {
+    background-color: #444343;
+    color: rgb(247, 8, 59); 
     text-transform: uppercase; 
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2; 
+#customersTable tr:nth-child(even) {
+    background-color: #5c5b5b; 
 }
