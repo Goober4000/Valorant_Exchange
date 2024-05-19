@@ -12,8 +12,9 @@ const supabaseUrl = 'https://zwcjxtzbywpsvybkrcma.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp3Y2p4dHpieXdwc3Z5YmtyY21hIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTYwODU1MTgsImV4cCI6MjAzMTY2MTUxOH0.hi2qlkXOcvQJ4wc_0eoR-Rc0ypiKTt-E2BFxxnjFrB8'
 const supabase = supabaseClient.createClient(supabaseUrl, supabaseKey)
 
-app.use(express.static(path.join(__dirname, 'public')));
-
+app.get('/', (req, res) => {
+    res.sendFile('public/home_page.html', { root: __dirname })
+})
 
 app.get('/customers', async (req, res) => {
     console.log('Attempting to GET all Customers')
